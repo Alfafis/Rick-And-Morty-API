@@ -46,9 +46,12 @@ $ yarn start
 
 ---
 
-### 📋 Licença
+### 📋 Testes
+# Entrar na pasta web
+$ cd Rick-And-Mort-Api/
 
-Esse projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+# Iniciar o teste
+$ npm run test -- -u
 
 ---
 
