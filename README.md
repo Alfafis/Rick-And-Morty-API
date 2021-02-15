@@ -1,15 +1,15 @@
 <h1 align="center">
-    <img  width= '300'src=".\.github\home.png">
+    <img  width= '300'src=".\src\.github\home.png">
 </h1>
 
-<h3 align="center"> Next Level Week #02
+<h3 align="center"> Projeto Rick And Morty
 
-[WEB](<##-WEB-(Front-end)>) | [MOBILE](<##-MOBILE-(App)>)
+[WEB](<##-WEB-(Front-end)>)
 
 </h3>
 
 <h1 align="center">
-    <img src=".\.github\search.png">
+    <img src=".\src\.github\search.png">
 </h1>
 
 ## 📚 Sobre
