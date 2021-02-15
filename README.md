@@ -47,11 +47,13 @@ $ yarn start
 ---
 
 ### 📋 Testes
+```
 # Entrar na pasta web
 $ cd Rick-And-Mort-Api/
 
 # Iniciar o teste
 $ npm run test -- -u
+```
 
 ---
 
