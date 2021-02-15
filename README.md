@@ -1,8 +1,8 @@
+<h3 align="center"> Projeto Rick And Morty </h3>
+
 <h1 align="center">
     <img width= '500' src=".\src\.github\home.png">
 </h1>
-
-<h3 align="center"> Projeto Rick And Morty </h3>
 
 <h1 align="center">
     <img width= '500' src=".\src\.github\search.png">
