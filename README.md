@@ -1,15 +1,11 @@
+<h3 align="center"> Projeto Rick And Morty </h3>
+
 <h1 align="center">
-    <img  width= '300'src=".\src\.github\home.png">
+    <img width= '500' src=".\src\.github\home.png">
 </h1>
 
-<h3 align="center"> Projeto Rick And Morty
-
-[WEB](<##-WEB-(Front-end)>)
-
-</h3>
-
 <h1 align="center">
-    <img src=".\src\.github\search.png">
+    <img width= '500' src=".\src\.github\search.png">
 </h1>
 
 ## 📚 Sobre
@@ -50,9 +46,14 @@ $ yarn start
 
 ---
 
-### 📋 Licença
+### 📋 Testes
+```
+# Entrar na pasta web
+$ cd Rick-And-Mort-Api/
 
-Esse projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+# Iniciar o teste
+$ npm run test -- -u
+```
 
 ---
 
