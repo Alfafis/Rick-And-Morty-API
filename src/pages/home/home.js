@@ -8,6 +8,7 @@ import "./style.css";
 
 const Home = () => {
   const [character, SetCharacter] = useState([]);
+  const [modal, SetModal] = useState([]);
 
   function loader() {
     const search = document.querySelector(".loading");
@@ -45,6 +46,19 @@ const Home = () => {
     searchApi(search);
   }
 
+  function handleModal(id) {
+    api
+      .getCharacterById(id)
+      .then((response) => {
+        const res = response;
+        console.log(res);
+        SetModal(res);
+      })
+      .catch((error) => error);
+    const modal = document.querySelector(".modal");
+    modal.classList.toggle("display");
+  }
+
   return (
     <div className="menu">
       <div className="logo">
@@ -62,7 +76,7 @@ const Home = () => {
             <div
               className="Card"
               key={char.id}
-              onClick={() => handleClick(char.id)}
+              onClick={() => handleModal(char.id)}
             >
               <img className="logoImg" src={char.image} alt="card" />
               <label>
@@ -73,16 +87,25 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className="modal">
-        <div className="modal-header">
-          <img src="" alt="" />
-          <span className="legenda">teste</span>
-        </div>
-        <div className="modal-body"></div>
-      </div>
       <div className="loading">
         <img className="logoImg" src={loadImg} alt="loading" />
         <span>Loading</span>
+      </div>
+      <div className="modal" key={modal.id}>
+        <button>close</button>
+        <img className="modal-img" src={modal.image} alt={modal.name} />
+        <div className="modal-title">
+          <label>{modal.name}</label>
+          <span>{modal.gender}</span>
+        </div>
+        <div className="modal-body">
+          <label>About</label>
+          {/* <span>{modal.location}</span> */}
+          <label>Origin</label>
+          {/* <span>{modal.origin}</span> */}
+          <label>Locaition</label>
+          {/* <span>{modal.location}</span> */}
+        </div>
       </div>
     </div>
   );

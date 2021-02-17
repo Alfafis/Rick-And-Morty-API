@@ -153,8 +153,23 @@
   color: white;
 }
 
+.modal.display {
+  display: flex;
+}
+
 .modal {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
   display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
 }
 
 @media (max-width: 700px) {
